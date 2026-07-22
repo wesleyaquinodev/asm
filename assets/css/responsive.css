@@ -1,0 +1,571 @@
+@media (max-width: 768px) {
+    .header__inner {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0.75rem;
+    }
+
+    /* mobile off-canvas panel below header, not full-screen */
+    .nav {
+        position: fixed;
+        top: 72px;
+        right: 0;
+        max-height: calc(100vh - 72px);
+        background: var(--surface);
+        padding: 1.25rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: min(360px, 85%);
+        max-width: 420px;
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.28s ease, opacity 0.28s ease;
+        z-index: 90;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.18);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        border-left: 1px solid var(--border);
+    }
+
+    .nav.open {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav .nav-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--icon);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 95;
+    }
+
+    .nav__mobile-extra {
+        display: flex;
+    }
+
+    .nav__mobile-contact a {
+        word-break: break-word;
+    }
+
+    .nav a {
+        display: block;
+        padding: 0.85rem 0;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+    }
+
+    .nav a i {
+        color: var(--secondary);
+        margin-right: 0.6rem;
+        width: 18px;
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: inline-flex !important;
+        z-index: 120;
+        position: relative;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-btn {
+        display: none !important;
+    }
+
+    .nav {
+        position: static !important;
+        top: auto !important;
+        right: auto !important;
+        height: auto !important;
+        width: auto !important;
+        transform: none !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+        overflow: visible !important;
+        border-left: none !important;
+    }
+
+    .nav .nav-close {
+        display: none !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .brand strong {
+        font-size: 0.95rem;
+    }
+
+    .brand span {
+        font-size: 0.78rem;
+    }
+
+    .header-actions {
+        gap: 0.65rem;
+    }
+
+    .nav {
+        padding: 1.25rem 1rem;
+    }
+
+    .hero__actions {
+        gap: 0.75rem;
+    }
+
+    .service-card,
+    .card {
+        min-height: auto;
+        gap: 0.9rem;
+    }
+
+    .service-card__icon,
+    .card__icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .cards-grid,
+    .services-list,
+    .feature-list {
+        gap: 1rem;
+    }
+
+    .contact-form,
+    .about-card,
+    .contact-aside,
+    .faq-item {
+        padding: 1rem;
+    }
+}
+
+    .header__inner {
+        padding: 1rem 0.5rem;
+    }
+
+    .container {
+        width: min(100%, calc(100% - 1.5rem));
+    }
+
+    .hero {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .hero__title {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+    }
+
+    .section-title h2 {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+    }
+
+    .cards-grid,
+    .services-list,
+    .feature-list,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .card,
+    .contact-form,
+    .about-card,
+    .contact-aside,
+    .faq-item {
+        padding: 1.25rem;
+    }
+
+    .service-card {
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .service-card__icon,
+    .card__icon,
+    .feature-item__icon,
+    .contact-block__icon {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .service-card__content,
+    .card,
+    .faq-item,
+    .contact-form,
+    .contact-aside {
+        min-width: 0;
+    }
+
+    .service-card__content h3,
+    .card h3,
+    .feature-item h4,
+    .faq-item summary {
+        font-size: 1rem;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .service-card__content p,
+    .card p,
+    .feature-item p,
+    .faq-item p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .feature-item {
+        gap: 0.8rem;
+    }
+
+    .feature-item h4 {
+        font-size: 0.98rem;
+    }
+
+    .faq-item summary {
+        padding: 1rem 1rem;
+    }
+
+    .faq-item p {
+        padding: 0 1rem 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+@media (max-width: 490px) {
+    .nav{
+        top: 176px;
+    }
+
+    #btn-solicitar-consultoria{
+        display: none;
+    }
+
+    #menuBtn{
+        right: -8rem;
+    }
+    
+    #navCloseBtn{
+        top: 28.063rem;
+        right: 1.875rem;
+    }
+
+    #home .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container.about-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .feature-list{
+        grid-template-columns: none;
+    }
+
+    .about-card{
+        display: none;
+    }
+
+    .container .services-list{
+        grid-template-columns: none;
+    }
+
+    .container .cards-grid{
+        grid-template-columns: none;
+    }
+
+    #contato{
+        display:  flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .contants{
+        display:  flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .contants .ab{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer__copyright{
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    #btn-solicitar-consultoria{
+        display: none;
+    }
+    
+    #navCloseBtn{
+        top: 28.063rem;
+        right: 1.875rem;
+    }
+
+    #home .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container.about-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .feature-list{
+        grid-template-columns: none;
+    }
+
+    .about-card{
+        display: none;
+    }
+
+    .container .services-list{
+        grid-template-columns: none;
+    }
+
+    .container .cards-grid{
+        grid-template-columns: none;
+    }
+
+    .footer .contants{
+        display: flex;
+    }
+
+    .footer__copyright{
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .brand strong {
+        font-size: 0.95rem;
+    }
+
+    .brand span {
+        font-size: 0.78rem;
+    }
+
+    .header-actions {
+        gap: 0.65rem;
+    }
+
+    .nav {
+        padding: 1.25rem 1rem;
+    }
+
+    .hero__actions {
+        gap: 0.75rem;
+    }
+
+    .service-card,
+    .card {
+        min-height: auto;
+        gap: 0.9rem;
+    }
+
+    .service-card__icon,
+    .card__icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .cards-grid,
+    .services-list,
+    .feature-list {
+        gap: 1rem;
+    }
+
+    .contact-form,
+    .about-card,
+    .contact-aside,
+    .faq-item {
+        padding: 1rem;
+    }
+}
+
+    .header__inner {
+        padding: 1rem 0.5rem;
+    }
+
+    .container {
+        width: min(100%, calc(100% - 1.5rem));
+    }
+
+    .hero {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .hero__title {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+    }
+
+    .section-title h2 {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+    }
+
+    .cards-grid,
+    .services-list,
+    .feature-list,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .card,
+    .contact-form,
+    .about-card,
+    .contact-aside,
+    .faq-item {
+        padding: 1.25rem;
+    }
+
+    .service-card {
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .service-card__icon,
+    .card__icon,
+    .feature-item__icon,
+    .contact-block__icon {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .service-card__content,
+    .card,
+    .faq-item,
+    .contact-form,
+    .contact-aside {
+        min-width: 0;
+    }
+
+    .service-card__content h3,
+    .card h3,
+    .feature-item h4,
+    .faq-item summary {
+        font-size: 1rem;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .service-card__content p,
+    .card p,
+    .feature-item p,
+    .faq-item p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .feature-item {
+        gap: 0.8rem;
+    }
+
+    .feature-item h4 {
+        font-size: 0.98rem;
+    }
+
+    .faq-item summary {
+        padding: 1rem 1rem;
+    }
+
+    .faq-item p {
+        padding: 0 1rem 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+@media (max-width: 375px) {
+    #btn-solicitar-consultoria{
+        display: none;
+    }
+    
+    #navCloseBtn{
+        top: 28.063rem;
+        right: 1.875rem;
+    }
+
+    #home .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container.about-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .feature-list{
+        grid-template-columns: none;
+    }
+
+    .about-card{
+        display: none;
+    }
+
+    .container .services-list{
+        grid-template-columns: none;
+    }
+
+    .container .cards-grid{
+        grid-template-columns: none;
+    }
+
+    .footer .contants{
+        display: flex;
+    }
+
+    .footer__copyright{
+        text-align: center;
+    }
+}
+

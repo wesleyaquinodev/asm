@@ -1,0 +1,11 @@
+.text-center {
+    text-align: center;
+}
+
+.font-text {
+    font-family: var(--font-text);
+}
+
+.font-title {
+    font-family: var(--font-title);
+}

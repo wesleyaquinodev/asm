@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM Assesoria e Consultoria em Licitações</title>
+    <!-- SEO -->
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="author" content="Wesley Aquino">
+    <meta name="theme-color" content="#081A33">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <a href="#home" class="brand">
+            <div class="header-logo-text">
+                <img src="./assets/images/logo.svg" class="brand__logo brand__logo--desktop brand__logo--light" alt="Logo da ASM Assessoria em Licitações">
+                <span>Assessoria e Consultoria em Licitações</span>
+            </div>
+        </a>
+
+        <nav class="nav" id="navMenu">
+            <button type="button" id="navCloseBtn" class="nav-close" aria-label="Fechar menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <a href="#home">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#comoFunciona">Como Trabalhamos</a>
+            <a href="#sobre">Sobre a ASM</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#contato">Contato</a>
+            <div class="nav__mobile-extra">
+                <div class="nav__mobile-theme">
+                    <span>Modo Escuro</span>
+                    <button type="button" class="theme-toggle theme-toggle--mobile" id="themeToggleMobile" aria-label="Alternar tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="nav__mobile-contact">
+                    <p>Fale conosco</p>
+                    <a href="tel:616995003367"><i class="fa-solid fa-phone"></i> (61) 99500-3367</a>
+                    <a href="mailto:amsassessoria1@gmail.com"><i class="fa-solid fa-envelope"></i> amsassessoria1@gmail.com</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <a href="#contactForm" class="btn">Solicitar Consultoria</a>
+            <button type="button" class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-controls="navMenu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="container hero__grid">
+            <div>
+            <!-- <img src="./assets/images/imagelightmode.svg" class="a" alt="Logo da ASM Assessoria em Licitações"> -->
+            <!-- <img src="./assets/images/imgdarkmode.svg" class="brand__logo brand__logo--dark" alt="Logo da ASM Assessoria em Licitações"> -->
+                <h1 class="hero__title">Estratégia que gera <span class="result-color">resultados.</span></h1>
+                <p class="hero__text">Participação em licitações com segurança jurídica, planejamento estratégico e foco em resultados reais para sua empresa.</p>
+                <div class="hero__actions">
+                    <a href="#contato" class="btn">Solicite uma Consultoria</a>
+                    <a href="https://wa.me/61995003367" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</a>
+                </div>
+                <div class="hero__meta">
+                    <div class="meta-card"><strong>+500</strong><span>Oportunidades analisadas</span></div>
+                    <div class="meta-card"><strong>+1.200</strong><span>Processos acompanhados</span></div>
+                    <div class="meta-card"><strong>+300</strong><span>Empresas orientadas</span></div>
+                    <div class="meta-card"><strong>+95%</strong><span>Taxa de aprovação</span></div>
+                </div>
+            </div>
+    </section>
+
+    <section id="servicos" class="section section--sm">
+        <div class="container">
+            <div class="section-title">
+                <span>Nossos serviços</span>
+                <h2>O que fazemos para sua empresa vencer licitações</h2>
+                <p>Atendemos todo o ciclo licitatório, da análise de edital à execução contratual, com foco em conformidade e resultado.</p>
+            </div>
+            <div class="services-list">
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <div class="service-card__content">
+                        <h3>Análise de editais</h3>
+                        <p>Leitura técnica e jurídica para identificar oportunidades e riscos antes da proposta.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                    <div class="service-card__content">
+                        <h3>Elaboração de documentação</h3>
+                        <p>Documentos técnicos, declarações e planilhas alinhadas às exigências dos certames.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fa-solid fa-comments"></i></div>
+                    <div class="service-card__content">
+                        <h3>Planejamento estratégico</h3>
+                        <p>Estratégia operacional e jurídica para apresentar propostas mais competitivas.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fa-solid fa-file-shield"></i></div>
+                    <div class="service-card__content">
+                        <h3>Recursos administrativos</h3>
+                        <p>Preparação de impugnações, recursos e trânsito em julgado para proteger sua participação.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <div class="service-card__content">
+                        <h3>Gestão de processos</h3>
+                        <p>Acompanhamento desde a habilitação até a homologação de contratos e execuções.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="service-card__content">
+                        <h3>Capacitação e orientação</h3>
+                        <p>Treinamento e suporte para equipes que participam de licitações regularmente.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="comoFunciona" class="section">
+        <div class="container">
+            <div class="section-title">
+                <span>Como trabalhamos</span>
+                <h2>Processo claro e seguro em cada etapa</h2>
+                <p>Atuamos com metodologia definida para garantir que todas as exigências sejam cumpridas em tempo hábil.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>Pesquisa e diagnóstico</h3>
+                    <p>Identificamos licitações compatíveis com seu perfil e avaliamos exigências financeiras e documentais.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3>Preparação da proposta</h3>
+                    <p>Organizamos documentos, atestados e planilhas com foco em conformidade e competitividade.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-people-line"></i></div>
+                    <h3>Assessoria personalizada</h3>
+                    <p>Suporte técnico e jurídico durante todo o processo, com contato direto e respostas rápidas.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Acompanhamento e resultados</h3>
+                    <p>Monitoramos a habilitação, julgamento e publicação de resultados para ajustes e recursos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section section--sm">
+        <div class="container about-grid">
+            <div>
+                <div class="section-title">
+                    <span>Quem somos</span>
+                    <h2>Assessoria completa em licitações públicas</h2>
+                    <p>Somos especialistas em licitações públicas e contratos administrativos, atuando para reduzir riscos e aumentar suas chances de sucesso.</p>
+                </div>
+                <div class="feature-list">
+                    <article class="feature-item">
+                        <div class="feature-item__icon"><img src="./assets/images/icon-security-checked.svg" alt=""></div>
+                        <div>
+                            <h4>Segurança jurídica</h4>
+                            <p>Trabalhamos com base na Lei nº 14.133/2021 para maior conformidade e tranquilidade.</p>
+                        </div>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-item__icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div>
+                            <h4>Foco em resultado</h4>
+                            <p>Cada recomendação é pensada para garantir eficiência e ganho competitivo.</p>
+                        </div>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-item__icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <div>
+                            <h4>Atendimento personalizado</h4>
+                            <p>Avaliação individualizada e suporte direto com gestores especializados.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="about-card">
+                <h3>Compromisso com sua proposta</h3>
+                <p>Nossa equipe prepara sua participação em licitações com cuidado e análise especializada, reduzindo incertezas e ampliando competitividade.</p>
+                <p>Do planejamento à entrega dos documentos, oferecemos transparência e comunicação constante para que você esteja sempre informado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="section">
+        <div class="container">
+            <div class="section-title">
+                <span>Diferenciais</span>
+                <h2>Valor que faz a diferença na sua participação</h2>
+                <p>Atendimento ágil, atenção aos detalhes e mais de uma década de experiência em licitações e contratos públicos.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-user-check"></i></div>
+                    <h3>Atendimento humano</h3>
+                    <p>Comunicação clara e dedicada para cada cliente, com respostas rápidas ao longo do processo.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-balance-scale"></i></div>
+                    <h3>Transparência total</h3>
+                    <p>Relatórios claros e orientação em todas as fases do certame, sem surpresas.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>Agilidade operacional</h3>
+                    <p>Respostas e entregas rápidas para aproveitar oportunidades com prazo apertado.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon"><i class="fa-solid fa-gavel"></i></div>
+                    <h3>Forte embasamento jurídico</h3>
+                    <p>Equipe qualificada para minimizar riscos e preparar recursos quando necessário.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="perguntas" class="section section--sm">
+        <div class="container">
+            <div class="section-title">
+                <span>Perguntas Frequentes</span>
+                <h2>Dúvidas comuns sobre licitações e nossa atuação</h2>
+            </div>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>Minha empresa precisa de regularidade fiscal para participar?</summary>
+                    <p>Sim. Nossa equipe acompanha toda a documentação para que você esteja apto a participar dentro das exigências do edital.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Como posso receber uma proposta personalizada?</summary>
+                    <p>Basta preencher o formulário de contato com seus dados e tipo de serviço desejado. Entraremos em contato com uma proposta detalhada.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Vocês atuam em licitações estaduais e federais?</summary>
+                    <p>Sim. Atuamos em diferentes esferas, com foco em certames públicos e contratos administrativos.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/amsconsultoriaa@gmail.com" method="POST">
+                <div class="section-title section-title--compact">
+                    <span>Contato</span>
+                    <h2>Solicite um orçamento</h2>
+                    <p>Preencha os dados abaixo e nossa equipe entrará em contato.</p>
+                </div>
+                <input type="hidden" name="_subject" value="Novo contato via site ASM">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(61) 91234-5678" required>
+                <label for="company">Empresa</label>
+                <input type="text" id="company" name="company" placeholder="Nome da empresa" required>
+                <label for="service">Serviço desejado</label>
+                <select id="service" name="service" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="assessoria">Assessoria em licitações</option>
+                    <option value="analise">Análise de editais</option>
+                    <option value="documentacao">Elaboração de documentação</option>
+                    <option value="consultoria">Consultoria jurídica</option>
+                </select>
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Descreva sua necessidade" required></textarea>
+                <button type="submit" class="btn" id="submitButton">Enviar solicitação</button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<aside class="whatsapp-float">
+    <a href="https://wa.me/61995003367" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+</aside>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__links" id="contato">
+            <div class="contants">
+                <img src="./assets/images/logo.svg" class="brand__logo brand__logo--desktop brand__logo--light" alt="Logo da ASM Assessoria em Licitações">
+                <div class="ab">
+                    <strong><i class="fa-solid fa-envelope"></i> amsconsultoriaa@gmail.com</strong>
+                    <strong><i class="fa-brands fa-whatsapp"></i> (61) 99500-3367</strong>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">© 2026 ASM Assesoria e Consultoria em Licitações. Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<script src="./assets/js/script.js" defer></script>
+</body>
+</html>

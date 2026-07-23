@@ -252,12 +252,6 @@
         grid-template-columns: 1fr;
     }
 
-    /* @media (min-width: 412px) {
-    #menuBtn {
-        right: -3rem;
-        }
-    } */
-
 @media (max-width: 490px) {
     #btn-solicitar-consultoria{
         display: none;
